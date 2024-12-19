@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/tab-logo.svg" sizes="32x32" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Frank.</a>
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="Home"  class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Frank</h1>
+            <h3>Future Backend Developer</h3>
+            <p>I am currently a Computer Science student at Lyceum of the Philippines University - Cavite, passionate about technology and its impact on the world. My goal is to enhance my expertise in Python and backend development, focusing on building efficient systems. I am committed to continuous learning and honing my technical skills to solve complex problems and contribute to the tech industry. </p>
+            <div class="btn-box">
+                <a href="https://docs.google.com/document/d/1GUUEyHr2WZanPNnGUw5S7jEw3hvaCaI3a0jW8uYFiFg/edit?tab=t.0">Resume</a>
+                <a href="#contact">Let's talk!</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://github.com/Frank-sys486"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/frank-borromeo-15268a284/"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+        <span class="home-imageHover"></span>
+    </section>
+    <section id="skills"class="skills">
+        <div class="skills-content">
+            <h1>Skills</h1>
+            <div class="skills-boxes">
+                <div class="skill-item">
+                    <i class='bx bxl-python'></i>
+                    <div>Python</div>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-php'></i>
+                    <div>PHP</div>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxs-data'></i>
+                    <div>MySQL</div>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-html5'></i>
+                    <div>HTML</div>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-css3'></i>
+                    <div>CSS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id='projects'>
+    <h1>Projects </h1>
+        <div class="projects-container">
+            <div class="box">
+                <a href="https://github.com/Frank-sys486/snake" target="_blank" class="box-link">
+                    <img src="images/snake.png" alt="">
+                    <div class="content">
+                        <h2>snake</h2>
+                        <p>A basic python game made with tkinter libraries</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://github.com/Frank-sys486/face-recog" target="_blank" class="box-link">
+                    <img src="images/face-recog.png" alt="">
+                    <div class="content">
+                        <h2>face-recog</h2>
+                        <p>basic facial recognition with face reference made in python</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://github.com/Frank-sys486/fill-the-blank" target="_blank" class="box-link">
+                    <img src="images/fill-the-blank.png" alt="">
+                    <div class="content">
+                        <h2>fill-the-blank</h2>
+                        <p>Simple quiz maker built for students</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="https://github.com/Frank-sys486/student-php-sys" target="_blank" class="box-link">
+                    <img src="images/student-php-sys.png" alt="">
+                    <div class="content">
+                        <h2>Student web sys</h2>
+                        <p> Fullstack PHP website for a registration page and admin panel</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="box">
+                <a href="https://github.com/Frank-sys486/Sstudent-management-sys/" target="_blank" class="box-link">
+                    <img src="images/student-management-sys.png" alt="">
+                    <div class="content">
+                        <h2>student-management-sys</h2>
+                        <p> tkinter-based student management system</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or just want to say hi, feel free to contact me below.</p>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+    
+    <script src="js/script.js"></script>
+    
+    
+</body>
+</html>

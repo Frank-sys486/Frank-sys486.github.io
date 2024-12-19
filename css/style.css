@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+    background: #081b29; /* Change the track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00abf0; /* Change the thumb color */
+    border-radius: 6px; /* Rounded corners */
+    border: 3px solid #081b29; /* Add border to match the track color */
+    background-clip: padding-box; /* Ensure the thumb background doesn't overlap the border */
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #081b29;
+  }
+  
+
+body {
+    
+    color:#ededed
+}
+
+.header {
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight:500;
+    margin-left:35px;
+    transition:.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00abf0;
+}
+.home { 
+    height: 100vh; 
+    background: url('../images/home.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: left; 
+    padding: 0 10%; }
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content h3 { 
+    font-size: 32px; 
+    font-weight: 700; 
+    color: #00abf0; 
+    position: relative;
+
+}
+
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+
+}
+
+.home-content .btn-box{
+    position: relative;
+    width: 345px;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    
+}
+
+.home-content .btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center ;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size:19px;
+    color:#081b29;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition:.5s;
+}
+
+.btn-box a:hover{
+    color:#00abf0
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover{
+    color:#081b29;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+
+}
+
+.btn-box a::before {
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #081b29;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%
+}
+
+.home-sci{ /* space between button is 45px*/
+    position:absolute;
+    bottom: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+
+}
+
+.home-sci a{
+   position: relative;
+   display: inline-flex;
+    justify-content: center;
+    align-items: center ;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #081b29;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+    
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+
+.home-imageHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none
+}
+
+.home-imageHover:hover {
+    background: #081b29;
+    opacity: .8;
+
+}
+.home-imageHover::after{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+    height: 100%; 
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100;
+
+}
+
+/* ==== sklills ==== */
+.skills {
+    background-color: #081b29;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 10%;
+}
+
+
+.skills-content {
+    display: flex;
+    flex-direction: column; /* Keeps the h1 above */
+    align-items: center;
+}
+
+.skills-content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 50px; /* Add space between h1 and boxes */
+}
+
+.skills-content div {
+    display: flex;
+    gap: 50px; /* Add spacing between skill boxes */
+    justify-content: center;
+}
+
+.skills-boxes {
+    display: flex; /* Align skill items horizontally */
+    gap: 30px; /* Add space between skill items */
+    justify-content: center; /* Center all items */
+    flex-wrap: wrap; /* Allow wrapping if needed on smaller screens */
+}
+
+.skill-item {
+    background: transparent;
+    display: flex;
+    flex-direction: column; /* Align icon above text */
+    align-items: center; /* Center icon and text */
+    text-align: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.skill-item i {
+    font-size: 3rem; /* Adjust icon size */
+    color: #fff; /* Set icon color */
+}
+
+.skill-item div {
+    color: #fff; /* Text color */
+    font-size: 1.2rem; /* Adjust text size */
+    font-weight: bold; /* Optional: Bold text */
+}
+
+/* ==== projects ==== */
+.projects {
+    background-color: #081b29;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box; /* Prevent overflow due to padding */
+}
+
+.projects h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projects-container {
+    width: 100%; /* Make the container take up full width */
+    max-width: 1200px; /* Optional: restrict container width */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box; /* Include padding in total width */
+    overflow: hidden; /* Prevent overflow */
+    margin: 0; /* Remove extra margin */
+}
+
+.box {
+    width: 320px;
+    height: 180px;
+    background: black;
+    margin: 10px;
+    transition: 1s;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.box p {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.box:hover img {
+    transform: scale(1.3);
+    filter: brightness(50%);
+}
+
+.box:hover .content {
+    opacity: 1;
+}
+
+.box a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* contact me */
+
+.contact {
+    margin-top: 10%;
+    background-color: #06141f; /* Set background color */
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Ensure background image (if added later) covers the entire area */
+    background-position: center; /* Center the background */
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 0 10%; /* Add horizontal padding for responsiveness */
+    text-align: center; /* Center the text inside */
+    color: #fff; /* White text color for contrast */
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Slightly larger heading size */
+    margin-bottom: 10px;
+    color: #fff; /* Ensure white color for the heading */
+}
+
+.contact p {
+    font-size: 1.2rem; /* Larger text for better readability */
+    margin-bottom: 20px;
+    color: #ccc; /* Slightly dimmed text color for description */
+}
+
+.contact-form {
+    width: 100%; /* Full width inside the container */
+    max-width: 600px; /* Restrict form width for better layout */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between form fields */
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* Ensure label text is white */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background: #fff; /* White background for contrast */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0078ff; /* Highlight border on focus */
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0078ff; /* Bright button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+@keyframes showRight{
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events:auto;
+    }
+}
+
